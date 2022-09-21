@@ -48,7 +48,7 @@ def CreateCheckoutSessionView(request, imgId):
         
         image = Image.objects.get(id = imgId)
         imgPrice = image.price
-        imgPrice = (imgPrice/70) *100
+        imgPrice = (imgPrice/80) *100
         imgPrice = int(imgPrice)
 
         YOUR_DOMAIN = "http://127.0.0.1:8000"

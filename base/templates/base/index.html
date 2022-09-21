@@ -40,7 +40,7 @@
                     <img src="{{ image.original_url.url|watermark:"test,position=tr,opacity=35,tile=1" }}" alt="" class="img-thumbnail w-50 bg-body>
 
                     <div class="container w-50 bg-body p-2">
-                        <p class="font-italic text-light">Price: <span class="display-6 text-decoration-underline">{{ image.price }}</span></p>
+                        <p class="font-italic text-light">Price: Rs.<span class="display-6 text-decoration-underline">{{ image.price }}</span></p>
                         <a href="{% url 'image-detail' image.id %}" class="btn btn-primary" id="checkout-button">Buy</a>
                     </div>
                 </div>
